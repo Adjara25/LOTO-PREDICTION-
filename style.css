@@ -1,0 +1,219 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    /* Bouton menu (hamburger) */
+    .menu-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .menu-button span {
+      display: block;
+      height: 4px;
+      background-color: #39ff14; /* Vert néon */
+      border-radius: 3px;
+      transition: 0.3s;
+    }
+
+    .menu-button.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-button.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-button.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* Menu caché par défaut */
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 50%;
+      height: 50%;
+      background-color: #000;
+      padding: 60px 20px;
+      border-radius: 10px;
+      transition: right 0.3s ease-in-out;
+      z-index: 1000;
+    }
+
+    .menu.active {
+      right: 0;
+    }
+
+    .menu a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      margin: 30px 0;
+      font-size: 1.2em;
+    }
+
+    .menu a:hover {
+      text-decoration: none;
+    }
+    
+#download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #39ff14;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      border: none;
+    }
+#download-btn:hover {
+    box-shadow: 0 0 10px #39ff14;
+    background-color: #00ff99;
+    }
+    
+    .books-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .book-card {
+      background-color: #111;
+      border: 1px solid #39ff14;
+      padding: 15px;
+      width: 250px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .book-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #39ff14;
+    }
+
+    .book-card h2 {
+      color: white;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px #39ff14;
+    }
+
+    .book-card p {
+      font-size: 0.9em;
+    }
+    
+    .book-card img {
+      width: 200px;
+      border-radius: 8px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #39ff14;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .download-btn:hover {
+      background-color: #00ff99;
+    }
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: #333;
+    border-radius: 10px;
+}
+
+a {
+      display: inline-block;
+      color: black;
+      margin-top: 100px;
+      padding: 10px 15px;
+      width: 70%;
+      background-color: #39ff14;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      border: none;
+    }
+
+a:hover {
+    box-shadow: 0 0 10px #39ff14;
+    background-color: #00ff99;
+    color: black;
+    }
+    
+    .loto-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 99%;
+    font-family: Arial, sans-serif;
+}
+
+.loto-table th, .loto-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.loto-table th {
+    background-color: black;
+}
+
+.loto-table td {
+    background-color: black;
+}
+
+.loto-table tr:nth-child(even) td {
+    background-color: black;
+}
+
+.loto-table tr:hover td {
+    background-color: black;
+}
+
+button {
+      display: inline-block;
+      color: black;
+      margin-top: 50px;
+      padding: 10px 15px;
+      width: 70%;
+      background-color: #39ff14;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      border: none;
+    }
+    
+    button:hover {
+    box-shadow: 0 0 10px #39ff14;
+    background-color: #00ff99;
+    color: black;
+    }
