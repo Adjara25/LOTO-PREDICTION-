@@ -5,7 +5,7 @@ const form = document.getElementById('payment-form');
 
     // Ton lien PayDunya avec return_url GitHub Pages
     const returnUrl = "https://Adjarie25.github.io/LOTO-PREDICTION-/turbo.html?paid=true";
-    const paymentUrl = `https://pydu.me/nZf5XZ?return_url=${encodeURIComponent(returnUrl)}`;
+    const paymentUrl = `https://pydu.me/KXsYCX?return_url=${encodeURIComponent(returnUrl)}`;
 
     function generateNumbers() {
       let a = Math.floor(Math.random() * 90) + 1;
